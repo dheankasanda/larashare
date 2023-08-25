@@ -8,7 +8,7 @@ use PsiMikroskil\Larashare\Http\Request;
 /**
  * @mixin Request
  */
-class RequestModel
+trait RequestModel
 {
     /**
      * Get grouping parameters
