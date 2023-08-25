@@ -13,7 +13,7 @@ class CreateRequestCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'create:request {name}';
+    protected $signature = 'create:request {name}';
 
     /**
      * The console command description.

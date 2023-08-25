@@ -13,7 +13,7 @@ class CreateEnforcerCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'create:enforcer {name}';
+    protected $signature = 'create:enforcer {name}';
 
     /**
      * The console command description.
