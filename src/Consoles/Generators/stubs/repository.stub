@@ -1,0 +1,44 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Contracts\Database\Query\Builder;
+use PsiMikroskil\Larashare\Http\Databases\Repository;
+
+class {{ class }} extends Repository
+{
+    /**
+     * Add default join clause into query builder
+     *
+     * Note: Insert your default join method here using $builder->join() method
+     * @param Builder $builder
+     * @return $this
+     */
+    protected function addDefaultJoinClause(Builder $builder): self
+    {
+        return $this;
+    }
+
+    /**
+     * Set default select value in repository
+     *
+     * Note: Insert your default table select here
+     *
+     * @return string[]
+     */
+    protected function defaultSelect(): array
+    {
+        return ['*'];
+    }
+
+    /**
+     * Resolve provided special parameters
+     *
+     * @param array $special_parameters
+     * @return $this
+     */
+    protected function resolveSpecialParameters(array $special_parameters = []): self
+    {
+        return $this;
+    }
+}

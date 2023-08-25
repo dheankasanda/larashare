@@ -1,0 +1,31 @@
+<?php
+
+namespace {{ namespace }};
+
+
+use PsiMikroskil\Larashare\Http\Request;
+use PsiMikroskil\Larashare\Http\Enforcer;
+use Illuminate\Contracts\Validation\ValidationRule;
+
+class {{ class }} extends Request
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(Enforcer $enforcer): bool
+    {
+        return $enforcer->handle($this);
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, ValidationRule|array|string>
+     */
+    public function rules(): array
+    {
+        return [
+            //
+        ];
+    }
+}

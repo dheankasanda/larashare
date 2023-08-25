@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+use PsiMikroskil\Larashare\Http\Request;
+use PsiMikroskil\Larashare\Http\Enforcer;
+
+class {{ class }} extends Enforcer
+{
+    /**
+     * Enforce incoming request to pass some validation
+     *
+     * @param Request $request
+     * @return bool
+     */
+    public function handle(Request $request): bool
+    {
+        return true;
+    }
+}
