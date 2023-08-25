@@ -74,7 +74,7 @@ class Repository extends Singleton
     {
         if (empty($selects)) $selects = $this->defaultSelect();
 
-        $query = $this->createFindQuery($selects, $where, $order_by, $group_by, $limit, $offset, $special_parameters)->addDefaultJoinClause($this->builder())->builder();
+        $query = $this->createFindQuery($selects, $where, $order_by, $group_by, $limit, $offset, $special_parameters)->addDefaultJoinClause()->builder();
 
         return $distinct ? $query->distinct()->get() : $query->get();
     }
@@ -172,10 +172,9 @@ class Repository extends Singleton
      * Add default join clause into query builder
      *
      * Note: Insert your default join method here using $builder->join() method
-     * @param Builder $builder
      * @return $this
      */
-    protected function addDefaultJoinClause(Builder $builder): self
+    public function addDefaultJoinClause(): self
     {
         return $this;
     }
