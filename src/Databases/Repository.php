@@ -193,6 +193,8 @@ class Repository extends Singleton
      */
     public function createFindQuery(array $selects = [], array $where = [], string|array $order_by = [], string|array $group_by = [], ?string $limit = null, ?int $offset = null, array $special_parameters = []): self
     {
+        $this->builder();
+
         return $this->addSelectClause($selects)->addWhereClause($where)->addOrderByClause($order_by)->addGroupByClause($group_by)->addLimitClause($limit)->addOffsetClause($offset)->resolveSpecialParameters($special_parameters);
     }
 
