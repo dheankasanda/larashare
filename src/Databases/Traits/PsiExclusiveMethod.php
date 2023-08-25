@@ -33,6 +33,8 @@ trait PsiExclusiveMethod
         bool         $distinct = true
     ): array
     {
+        if (empty($selects)) $selects = $this->defaultSelect();
+
         $this->createFindQuery(
             $selects,
             $where,
@@ -41,7 +43,7 @@ trait PsiExclusiveMethod
             'all',
             $offset,
             $special_parameters
-        );
+        )->addDefaultJoinClause($this->builder());
 
         $distinct ? $this->builder()->distinct() : $this->builder();
 
