@@ -216,7 +216,12 @@ class Repository extends Singleton
      */
     protected function addOffsetClause(?int $offset = null): self
     {
-        $this->builder()->offset($offset ?? config('repository.default_offset', 0));
+        $limitProperty = $this->builder()->unions ? 'unionLimit' : 'limit';
+
+        if ($this->builder()->$limitProperty !== null) {
+            $this->builder()->offset($offset ?? config('repository.default_offset', 0));
+        }
+
 
         return $this;
     }
