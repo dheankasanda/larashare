@@ -1,0 +1,16 @@
+<?php
+
+namespace {{ namespace }}
+
+class {{ class }}
+{
+    /**
+     * Handle incoming request
+     *
+     * @return mixed
+     */
+    public function handle(): mixed
+    {
+        // Todo: Add your service logic here
+    }
+}

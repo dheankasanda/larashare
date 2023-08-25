@@ -3,6 +3,7 @@
 namespace PsiMikroskil\Larashare;
 
 use Illuminate\Support\ServiceProvider;
+use PsiMikroskil\Larashare\Consoles\Generators\CreateServiceCommand;
 
 class LarashareServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,8 @@ class LarashareServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $this->commands([
+            CreateServiceCommand::class
+        ]);
     }
 }
