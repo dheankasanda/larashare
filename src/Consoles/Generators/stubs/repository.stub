@@ -2,7 +2,6 @@
 
 namespace {{ namespace }};
 
-use Illuminate\Contracts\Database\Query\Builder;
 use PsiMikroskil\Larashare\Databases\Repository;
 
 class {{ class }} extends Repository
@@ -11,10 +10,9 @@ class {{ class }} extends Repository
      * Add default join clause into query builder
      *
      * Note: Insert your default join method here using $builder->join() method
-     * @param Builder $builder
      * @return $this
      */
-    protected function addDefaultJoinClause(Builder $builder): self
+    public function addDefaultJoinClause(): self
     {
         return $this;
     }

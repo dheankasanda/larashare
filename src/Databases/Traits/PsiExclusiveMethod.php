@@ -43,7 +43,7 @@ trait PsiExclusiveMethod
             'all',
             $offset,
             $special_parameters
-        )->addDefaultJoinClause($this->builder());
+        )->addDefaultJoinClause();
 
         $distinct ? $this->builder()->distinct() : $this->builder();
 
@@ -122,7 +122,7 @@ trait PsiExclusiveMethod
             $limit,
             $offset,
             $special_parameters
-        )->addDefaultJoinClause($this->builder())->builder();
+        )->addDefaultJoinClause()->builder();
 
         $result = $this->builder()->first();
 
