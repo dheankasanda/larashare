@@ -20,7 +20,7 @@ class CreateFeatureCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Send a marketing email to a user';
+    protected $description = 'Create new feature with service, request, and enforcer';
 
     /**
      * Execute the console command.
