@@ -7,6 +7,7 @@ use PsiMikroskil\Larashare\Consoles\Generators\CreateEnforcerCommand;
 use PsiMikroskil\Larashare\Consoles\Generators\CreateRepositoryCommand;
 use PsiMikroskil\Larashare\Consoles\Generators\CreateRequestCommand;
 use PsiMikroskil\Larashare\Consoles\Generators\CreateServiceCommand;
+use PsiMikroskil\Larashare\Consoles\Utility\CreateFeatureCommand;
 
 class LarashareServiceProvider extends ServiceProvider
 {
@@ -27,7 +28,9 @@ class LarashareServiceProvider extends ServiceProvider
             CreateServiceCommand::class,
             CreateRequestCommand::class,
             CreateEnforcerCommand::class,
-            CreateRepositoryCommand::class
+            CreateRepositoryCommand::class,
+
+            CreateFeatureCommand::class
         ]);
     }
 }

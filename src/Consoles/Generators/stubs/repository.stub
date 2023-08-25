@@ -3,7 +3,7 @@
 namespace {{ namespace }};
 
 use Illuminate\Contracts\Database\Query\Builder;
-use PsiMikroskil\Larashare\Http\Databases\Repository;
+use PsiMikroskil\Larashare\Databases\Repository;
 
 class {{ class }} extends Repository
 {

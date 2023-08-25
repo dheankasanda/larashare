@@ -9,11 +9,11 @@ use Symfony\Component\Console\Attribute\AsCommand;
 class CreateRequestCommand extends GeneratorCommand
 {
     /**
-     * The console command name.
+     * The name and signature of the console command.
      *
      * @var string
      */
-    protected $name = 'create:request';
+    protected $signature = 'create:request {name}';
 
     /**
      * The console command description.
