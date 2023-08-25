@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use PsiMikroskil\Larashare\Databases\Traits\PsiExclusiveMethod;
 use PsiMikroskil\Larashare\Exceptions\EmptyWhereClauseException;
-use PsiMikroskil\Larashare\Patterns\Singleton;
+use PsiMikroskil\Larashare\Support\Patterns\Singleton;
 use Throwable;
 
 class Repository extends Singleton

@@ -1,6 +1,6 @@
 <?php
 
-namespace PsiMikroskil\Larashare\Patterns;
+namespace PsiMikroskil\Larashare\Support\Patterns;
 
 class Singleton
 {

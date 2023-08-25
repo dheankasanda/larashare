@@ -1,11 +1,11 @@
 <?php
 
-namespace PsiMikroskil\Larashare\Facades;
+namespace PsiMikroskil\Larashare\Support\Facades;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Collection;
 use PsiMikroskil\Larashare\Databases\Repository as FacadeSubject;
-use PsiMikroskil\Larashare\Patterns\Facade;
+use PsiMikroskil\Larashare\Support\Patterns\Facade;
 use stdClass;
 
 /**

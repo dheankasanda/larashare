@@ -1,5 +1,8 @@
 <?php
 
+use PsiMikroskil\Larashare\Http\Request;
+use PsiMikroskil\Larashare\Support\Pagination;
+
 if (!function_exists('get_class_name')) {
     /**
      * Get classname from given namespace
@@ -42,5 +45,19 @@ if (!function_exists('get_class_current_directory')) {
         $namespace = explode('\\', $called_class);
         array_pop($namespace);
         return array_pop($namespace);
+    }
+}
+
+if (!function_exists('paginate')) {
+    /**
+     * Paginate response
+     *
+     * @param Request $request
+     * @param int $total
+     * @return array|null
+     */
+    function paginate(Request $request, int $total): ?array
+    {
+        return Pagination::paginate($request, $total);
     }
 }
