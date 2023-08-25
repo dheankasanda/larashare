@@ -13,7 +13,7 @@ class CreateRepositoryCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'create:repository {name}';
+    protected $name = 'create:repository {name}';
 
     /**
      * The console command description.

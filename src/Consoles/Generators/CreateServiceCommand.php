@@ -13,7 +13,7 @@ class CreateServiceCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'create:service {name}';
+    protected $name = 'create:service {name}';
 
     /**
      * The console command description.
