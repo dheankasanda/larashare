@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "PsiMikroskil\\Larashare\\": "src/"
-        }
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
     },
     "authors": [
         {
