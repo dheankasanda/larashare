@@ -13,21 +13,21 @@ class CreateServiceCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'create:enforcer';
+    protected $name = 'create:service';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new enforcer class';
+    protected $description = 'Create a new service class';
 
     /**
      * The type of class being generated.
      *
      * @var string
      */
-    protected $type = 'Enforcer';
+    protected $type = 'Service';
 
     /**
      * Get the stub file for the generator.
@@ -47,6 +47,6 @@ class CreateServiceCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace . '\Http\Enforcers';
+        return $rootNamespace . '\Http\Services';
     }
 }
