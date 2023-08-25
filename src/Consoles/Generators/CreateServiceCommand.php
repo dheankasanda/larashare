@@ -5,7 +5,7 @@ namespace PsiMikroskil\Larashare\Consoles\Generators;
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Attribute\AsCommand;
 
-#[AsCommand(name: 'create:service {name}')]
+#[AsCommand(name: 'create:service')]
 class CreateServiceCommand extends GeneratorCommand
 {
     /**
@@ -47,6 +47,6 @@ class CreateServiceCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace . '\Http\Services';
+        return $rootNamespace . '\Services';
     }
 }

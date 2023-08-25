@@ -5,7 +5,7 @@ namespace PsiMikroskil\Larashare\Consoles\Generators;
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Attribute\AsCommand;
 
-#[AsCommand(name: 'create:request {name}')]
+#[AsCommand(name: 'create:request')]
 class CreateRequestCommand extends GeneratorCommand
 {
     /**

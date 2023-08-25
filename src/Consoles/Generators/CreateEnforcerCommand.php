@@ -5,7 +5,7 @@ namespace PsiMikroskil\Larashare\Consoles\Generators;
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Attribute\AsCommand;
 
-#[AsCommand(name: 'create:enforcer {name}')]
+#[AsCommand(name: 'create:enforcer')]
 class CreateEnforcerCommand extends GeneratorCommand
 {
     /**
@@ -47,6 +47,6 @@ class CreateEnforcerCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace . '\Http\Enforcers';
+        return $rootNamespace . '\Enforcers';
     }
 }

@@ -1,6 +1,8 @@
 <?php
 
-namespace PsiMikroskil\Larashare\Http;
+namespace PsiMikroskil\Larashare\Authorizations;
+
+use PsiMikroskil\Larashare\Http\Request;
 
 class Enforcer
 {

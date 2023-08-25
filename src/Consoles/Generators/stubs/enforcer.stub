@@ -3,7 +3,7 @@
 namespace {{ namespace }};
 
 use PsiMikroskil\Larashare\Http\Request;
-use PsiMikroskil\Larashare\Http\Enforcer;
+use PsiMikroskil\Larashare\Authorizations\Enforcer;
 
 class {{ class }} extends Enforcer
 {
