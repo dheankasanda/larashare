@@ -47,7 +47,7 @@ trait PsiExclusiveMethod
 
         return [
             'total' => $this->builder()->count(),
-            'result' => $this->builder()->limit($limit)->get()
+            'result' => $this->addLimitClause($limit)->addOffsetClause($offset)->builder()->get()
         ];
     }
 
