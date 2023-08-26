@@ -35,5 +35,11 @@ class LarashareServiceProvider extends ServiceProvider
 
             CreateFeatureCommand::class
         ]);
+
+
+        $this->publishes([
+            __DIR__ . '/Resources/Configurations' => config_path(),
+        ], 'larashare-config');
+
     }
 }
