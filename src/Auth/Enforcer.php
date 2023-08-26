@@ -1,6 +1,6 @@
 <?php
 
-namespace PsiMikroskil\Larashare\Authorizations;
+namespace PsiMikroskil\Larashare\Auth;
 
 use PsiMikroskil\Larashare\Http\Request;
 

@@ -4,7 +4,7 @@ namespace {{ namespace }};
 
 
 use PsiMikroskil\Larashare\Http\Request;
-use PsiMikroskil\Larashare\Authorizations\Enforcer;
+use PsiMikroskil\Larashare\Auth\Enforcer;
 use Illuminate\Contracts\Validation\ValidationRule;
 
 class {{ class }} extends Request
