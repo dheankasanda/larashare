@@ -5,7 +5,7 @@ namespace PsiMikroskil\Larashare\Providers\UserProviders;
 use Exception;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider;
-use PsiMikroskil\Larashare\Auth\AuthModel\JwtUserModel;
+use PsiMikroskil\Larashare\Auth\Models\JwtUserModel;
 use PsiMikroskil\Larashare\Exceptions\NotFoundException;
 use PsiMikroskil\Larashare\Interfaces\AuthDriverInterface;
 use PsiMikroskil\Larashare\Resources\Databases\Models\UserRoles\Individu;

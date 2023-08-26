@@ -3,6 +3,7 @@
 namespace PsiMikroskil\Larashare;
 
 use Illuminate\Support\ServiceProvider;
+use PsiMikroskil\Larashare\Consoles\Generators\CreateAuthDriverCommand;
 use PsiMikroskil\Larashare\Consoles\Generators\CreateEnforcerCommand;
 use PsiMikroskil\Larashare\Consoles\Generators\CreateRepositoryCommand;
 use PsiMikroskil\Larashare\Consoles\Generators\CreateRequestCommand;
@@ -29,6 +30,8 @@ class LarashareServiceProvider extends ServiceProvider
             CreateRequestCommand::class,
             CreateEnforcerCommand::class,
             CreateRepositoryCommand::class,
+
+            CreateAuthDriverCommand::class,
 
             CreateFeatureCommand::class
         ]);

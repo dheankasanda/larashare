@@ -1,6 +1,6 @@
 <?php
 
-namespace PsiMikroskil\Larashare\Auth\AuthModel;
+namespace PsiMikroskil\Larashare\Auth\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Auth\User as Authenticatable;

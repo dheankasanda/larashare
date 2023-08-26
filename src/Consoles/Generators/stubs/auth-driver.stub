@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Contracts\Auth\Authenticatable;
+use PsiMikroskil\Larashare\Interfaces\AuthDriverInterface;
+
+class {{ class }} implements AuthDriverInterface
+{
+    /**
+     * Authenticate user with provided credentials
+     *
+     * @param array $credentials
+     * @return Authenticatable|null
+     */
+    public function authenticate(array $credentials): ?Authenticatable
+    {
+        // Todo: Add your authentication logic here
+    }
+}
