@@ -11,7 +11,7 @@ use PsiMikroskil\Larashare\Interfaces\AuthDriverInterface;
 use PsiMikroskil\Larashare\Resources\Databases\Models\UserRoles\Individu;
 use PsiMikroskil\Larashare\Resources\Databases\Repositories\Facades\UserRoles\IndividuRepository;
 
-class JwtUserProviders implements UserProvider
+class JwtUserProvider implements UserProvider
 {
     /**
      * Authentication driver used to validate credential
