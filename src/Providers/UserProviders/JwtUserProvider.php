@@ -28,8 +28,12 @@ class JwtUserProvider implements UserProvider
     protected array $expected_data;
 
 
-    public function __construct(AuthDriverInterface $authDriver, array $expected_data = ['*'])
+    public function __construct(AuthDriverInterface|string $authDriver, array $expected_data = ['*'])
     {
+        if (is_string($authDriver)) {
+            $authDriver = new $authDriver();
+        }
+
         $this->authDriver = $authDriver;
         $this->expected_data = $expected_data;
     }
