@@ -20,6 +20,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^8.1",
-        "laravel/framework": "^10.0@dev"
+        "laravel/framework": "^10.0@dev",
+      "ext-ldap": "*",
+        "tymon/jwt-auth": "2.x-dev"
     }
 }
